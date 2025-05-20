@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(47, 127, 180);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: darksalmon;
+}
+
+
+#categorias {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+
+#top-10 {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    align-items: center;
+}
