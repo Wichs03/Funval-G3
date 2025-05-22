@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.contenedor {
+    border: solid 1px;
+    padding: 30px 10px 15px 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #172a38;
+    
+}
+
+.caja {
+    border: solid 1px;
+    padding: 30px 20px 30px 10px;
+}
+
+.caja1 {
+    background-color: #ec4b5d;
+
+}
+
+.caja2 {
+    background-color: #f48773;
+    margin-left: 30px;
+}
+
+table {
+    border: solid 3px;
+    margin-left: 30px;
+    padding: 4px;
+    border-collapse: collapse;
+  
+}
+
+thead {
+        border-bottom: 3px solid black;         
+    }
+
+thead th {
+    border: solid 1px ;
+    padding: 8px;      
+    }
+
+tbody td {
+    border: solid 1px ;
+    padding: 8px;
+        
+    }
+

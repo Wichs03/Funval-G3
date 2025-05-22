@@ -1,0 +1,120 @@
+
+body {
+    background-color: #fbeec2;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    perspective: 1000px;
+    width: 350px;
+    height: 350px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.card .front {
+    transform: rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.card .back {
+    background: rgb(3, 35, 54);
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    transform: rotateY(180deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .face {
+    box-sizing: border-box; 
+}
+
+.card .back {
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #61a6ab;
+}
+
+.container{
+    border: solid 5px #605951;
+    padding: 15px;
+    border-radius: 2%;
+    text-align: center;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+#foto {
+    border-radius: 5%;
+}
+
+#xbox {
+    border-radius: 80%;
+    margin-left: 17px;
+}
+
+#redes {
+    display:flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#redes img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+#redes img:hover {
+    transform: scale(1.2);
+}
