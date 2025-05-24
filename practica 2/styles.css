@@ -1,0 +1,105 @@
+
+
+.container {
+    display: flex;
+    width: 400px;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0e0e1b;
+}
+
+
+.arriba {
+     display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+img {
+    width: 150px;
+}
+
+h1 {
+    color: white;
+}
+
+input {
+    width: 85%;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #2d2480;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.check {
+    background-color: #2d2480;
+}
+
+a {
+    color: white;
+}
+
+.options {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.label {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.buttons{
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+button {
+    display: flex;
+    width: 45%;
+    padding: 10px;
+    color: white;
+}
+
+#register {
+    background-color: #2d2480;
+}
+
+
+#login {
+    background-color: rgb(134, 13, 134);
+}
+
+h3 {
+    color: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0, 0, 15px, 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.redes img {
+    width: 35px;
+    height: 35px;
+    border: solid 1px white;
+}
