@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 600px;
+    height: 100vh;
+}
+
+header {
+    padding: 25px;
+    color: white;
+    background-color: #50ac54;
+    text-align: center;
+}
+
+nav {
+    margin: 0;
+    display: flex;
+    padding: 5px;
+    color: white;
+    background-color: #333;
+}
+
+nav ul {
+    gap: 15px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+
+}
+
+.hero {
+    height: 400px;
+    background-color: #ffecd4;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero h2 {
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 15px;
+}
+
+.hero img {
+    width: 180px;
+    height: 180px;
+    background-color: #ddd;
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    top: 20px;
+}
+
+.hero button {
+    background-color: #50ac54;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.second {
+    margin-top: 45px;
+}
+
+.second h2 {
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.second div {
+    background-color: #f8f4f4;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+.second div ul{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.second div ul li {
+    margin-left: 35px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
