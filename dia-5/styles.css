@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cajas {
+    gap: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: solid;
+    width: 500px;
+}
+
+.caja {
+    border: solid;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+}
+
+@media (min-width: 0px) {
+    
+    .cajas{
+        width: 350px;    
+    }
+
+    .caja {
+        background-color: blueviolet;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .cajas{
+        width: 500px;    
+    }
+
+    .caja {
+        background-color: aqua;
+    }
+}
