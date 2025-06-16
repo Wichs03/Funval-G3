@@ -3,7 +3,7 @@ console.log("Script cargado");
 const habilidades = [
   {
     id: `html-css`,
-    nombre: `html y css`,
+    nombre: `Html y css`,
     descripcion: `Desarrollador frontend con sólidos conocimientos en HTML y CSS, y fundamentos prácticos de JavaScript para crear sitios web interactivos y responsivos. Poseo además conocimientos básicos de backend que complementan mi enfoque en el desarrollo de experiencias web eficientes y accesibles.`,
     imagen: `./imagenes/web.webp`,
     nivel: `Avanzado`,
@@ -50,12 +50,13 @@ function mostrarModal(habilidad) {
 
   const nivel = document.createElement("p");
   nivel.textContent = `Nivel: ${habilidad.nivel}`;
+  nivel.classList.add("modalNivel");
 
   const descripcion = document.createElement("p");
   descripcion.textContent = habilidad.descripcion;
 
   const botonCerrar = document.createElement("button");
-  botonCerrar.textContent = "Cerrar";
+  botonCerrar.textContent = "X";
   botonCerrar.classList.add("btn-cerrar");
 
   botonCerrar.addEventListener("click", () => {
@@ -89,11 +90,4 @@ habilidades.forEach((habilidad) => {
   });
 
   cardsHabilidades.appendChild(card);
-});
-
-const botonToggle = document.getElementById("menu-hamburguesa");
-const menu = document.querySelector(".menu ul");
-
-botonToggle.addEventListener("click", () => {
-  menu.classList.toggle("menu-abierto");
 });

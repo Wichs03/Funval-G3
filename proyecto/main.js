@@ -18,6 +18,13 @@
   });
 });
  */
+const botonToggle = document.getElementById("menu-hamburguesa");
+const menu = document.querySelector(".menu ul");
+
+botonToggle.addEventListener("click", () => {
+  menu.classList.toggle("menu-abierto");
+});
+
 function toggleDarkMode() {
   const body = document.body;
   const isDark = body.getAttribute("data-theme") === "dark";

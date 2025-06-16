@@ -187,17 +187,76 @@ main {
 
 .card {
   height: 20vh;
+  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
+  border-radius: 5%;
   background: linear-gradient(145deg, #d1d1d1, #ffffff);
   box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
   color: #071013;
   cursor: pointer;
   flex-shrink: 0;
-  border: solid var(--color-secundario-oscuro);
+  border: none;
   transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.large-card {
+  height: 20vh;
+  aspect-ratio: 2.5 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1.5vh;
+  background: linear-gradient(145deg, #d1d1d1, #ffffff);
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  color: #071013;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s ease, visibility 2s ease;
+  flex-shrink: 0;
+  border: none;
+}
+
+.imagen {
+  width: 20vh;
+  height: 20vh;
+  flex-shrink: 0;
+  border-radius: 5%;
+  background: linear-gradient(145deg, #d1d1d1, #ffffff);
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 2s ease, visibility 2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.imagen img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 5%;
+  pointer-events: none;
+  display: block;
+  border: none;
+}
+
+.web:hover .imagen,
+.ingles:hover .imagen,
+.versiones:hover .imagen,
+.responsividad:hover .imagen,
+.web:hover .large-card,
+.ingles:hover .large-card,
+.versiones:hover .large-card,
+.responsividad:hover .large-card {
+  opacity: 1;
+  visibility: visible;
 }
 
 .proyectos {
@@ -469,7 +528,7 @@ footer {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #071013;
+    background-color: #071013; /* o el color que uses */
     padding: 1rem 0;
     z-index: 15;
   }
