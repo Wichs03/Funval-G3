@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./proyectos.css" />
+    <script src="proyectos.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#"><img src="./imagenes/logo-light.svg" alt="" /></a>
+        </div>
+        <button id="menu-hamburguesa" aria-label="Abrir menú">
+          <img src="./imagenes/bars-solid.svg" alt="Menú" />
+        </button>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <button onclick="toggleDarkMode()">🌙</button>
+        <div class="redes">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/alohax3"
+                ><img
+                  src="./imagenes/facebook-brands.svg"
+                  alt="Icono de facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/luisdaniel.3/"
+                ><img
+                  src="./imagenes/instagram-brands.svg"
+                  alt="Icono de Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.github.com"
+                ><img src="./imagenes/github-brands.svg" alt="Icono de Github"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="proyectos" class="proyectos">
+        <h2>Proyectos</h2>
+        <div class="grid-proyectos" id="contenedor-proyectos"></div>
+      </section>
+      <section class="modales-proyectos">
+        <div id="modal-proyecto" class="modal oculto">
+          <div class="modal-contenido">
+            <span id="cerrar-modal">&times;</span>
+            <h3 id="modal-titulo"></h3>
+            <img id="modal-imagen" src="" alt="" />
+            <p id="modal-descripcion"></p>
+            <a id="modal-link" href="#" target="_blank">Ver Proyecto</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Luis Daniel Ornelas. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

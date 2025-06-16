@@ -1,133 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./habilidades.js" defer></script>
+    <script src="./main.js" defer></script>
     <title>Luis Daniel Ornelas</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="#"><img src="./imagenes/logo-light.svg" alt=""></a>
-            </div>
-                <button id="menu-hamburguesa" aria-label="Abrir menú">
-                    <img src="./imagenes/bars-solid.svg" alt="Menú">
-                </button>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
-                <button onclick="toggleDarkMode()">🌙</button>
-            <div class="redes">
-                <ul>
-                    <li><a href="https://www.facebook.com/alohax3"><img src="./imagenes/facebook-brands.svg" alt="Icono de facebook"></a></li>
-                    <li><a href="https://www.instagram.com/luisdaniel.3/"><img src="./imagenes/instagram-brands.svg" alt="Icono de Instagram"></a></li>
-                    <li><a href="https://www.github.com"><img src="./imagenes/github-brands.svg" alt="Icono de Github"></a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="logo">
+          <a href="#"><img src="./imagenes/logo-light.svg" alt="" /></a>
+        </div>
+        <button id="menu-hamburguesa" aria-label="Abrir menú">
+          <img src="./imagenes/bars-solid.svg" alt="Menú" />
+        </button>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <button onclick="toggleDarkMode()">🌙</button>
+        <div class="redes">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/alohax3"
+                ><img
+                  src="./imagenes/facebook-brands.svg"
+                  alt="Icono de facebook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/luisdaniel.3/"
+                ><img
+                  src="./imagenes/instagram-brands.svg"
+                  alt="Icono de Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.github.com"
+                ><img src="./imagenes/github-brands.svg" alt="Icono de Github"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="inicio">
-            <div class="foto"><img src="./imagenes/Luis.jpg" alt="fotografia"></div>
-            <p>¡Hola! Me llamo Luis Daniel Ornelas y soy desarrollador web frontend y un programador en desarrollo. Me apasiona el mundo de la programación y, aunque sigo aprendiendo, disfruto cada línea de código como una oportunidad para mejorar. Busco crecer profesionalmente creando experiencias web funcionales, limpias y centradas en el usuario. </p>
-        </section>
-        <section id="habilidades" class="skills">
-            <h2>Habilidades</h2>
-            <div class="web">
-                <div class="card">
-                    Desarrollo web 
-                </div>
-                <div class="imagen">
-                    <img src="./imagenes/web.webp" alt="Web development">
-                </div>
-                <div class="large-card">
-                    Desarrollador frontend con sólidos conocimientos en HTML y CSS, y fundamentos prácticos de JavaScript para crear sitios web interactivos y responsivos. Poseo además conocimientos básicos de backend que complementan mi enfoque en el desarrollo de experiencias web eficientes y accesibles.
-                </div>
-            </div>
-            <div class="ingles">
-                <div class="card">
-                    Ingles
-                </div>
-                <div class="imagen">
-                    <img src="./imagenes/ingles.png" alt="Ingles">
-                </div>
-                <div class="large-card">
-                    Tengo un nivel intermedio-alto de inglés (B2), lo que me permite desenvolverme con soltura en conversaciones con nativos y comunicarme de manera efectiva con clientes internacionales.
-                </div>
-            </div>
-            <div class="versiones">
-                <div class="card">
-                    Control de versiones 
-                </div>
-                <div class="imagen">
-                    <img src="./imagenes/git.png" alt="Git">
-                </div>
-                <div class="large-card">
-                    Manejo herramientas como Git para llevar un control eficiente de los cambios en mis proyectos, facilitando la colaboración y la gestión de diferentes versiones del código. Esto garantiza un desarrollo organizado y una fácil resolución de conflictos durante el trabajo en equipo.
-                </div>
-            </div>
-            <div class="responsividad">
-                <div class="card">
-                    Diseño responsivo
-                </div>
-                <div class="imagen">
-                    <img src="./imagenes/responsive.webp" alt="Responsividad">
-                </div>
-                <div class="large-card">
-                    Capacidad para crear interfaces web que se adaptan de manera óptima a distintos dispositivos y tamaños de pantalla, asegurando una experiencia de usuario consistente y accesible tanto en móviles, tablets como en desktop, usando técnicas modernas de CSS y media queries.
-                </div>
-            </div>
-            
-        </section>
-        <section id="proyectos" class="proyectos">
-            <h2>Proyectos</h2>
-            <div class="grid-proyectos">
-                <a href="../dia-2/index.html" class="card-proyectos">Practica 1</a>
-                <a href="../dia-3/index.html" class="card-proyectos">Practica 2</a>
-                <a href="../dia-5/index.html" class="card-proyectos">Practica 3</a>
-                <a href="../dia-6/index.html" class="card-proyectos">Practica 4</a>
-                <a href="../dia-7/index.html" class="card-proyectos">Practica 5</a>
-                <a href="../practica 1/index.html" class="card-proyectos">Practica Calificada 1</a>
-                <a href="../practica 2/index.html" class="card-proyectos">Practica Calificada 2</a>
-                <a href="../practica 3/index.html" class="card-proyectos">Practica Calificada 3</a>
+      <section class="inicio">
+        <div class="foto">
+          <img src="./imagenes/Luis.jpg" alt="fotografia" />
+        </div>
+        <p>
+          ¡Hola! Me llamo Luis Daniel Ornelas y soy desarrollador web frontend y
+          un programador en desarrollo. Me apasiona el mundo de la programación
+          y, aunque sigo aprendiendo, disfruto cada línea de código como una
+          oportunidad para mejorar. Busco crecer profesionalmente creando
+          experiencias web funcionales, limpias y centradas en el usuario.
+        </p>
+      </section>
+      <section id="habilidades" class="skills">
+        <h2>Habilidades</h2>
+      </section>
+      <section id="proyectos" class="proyectos">
+        <h2>Proyectos</h2>
+        <div class="grid-proyectos">
+          <a href="../dia-2/index.html" class="card-proyectos">Practica 1</a>
+          <a href="../dia-3/index.html" class="card-proyectos">Practica 2</a>
+          <a href="../dia-5/index.html" class="card-proyectos">Practica 3</a>
+          <a href="../dia-6/index.html" class="card-proyectos">Practica 4</a>
+          <a href="../dia-7/index.html" class="card-proyectos">Practica 5</a>
+          <a href="../practica 1/index.html" class="card-proyectos"
+            >Practica Calificada 1</a
+          >
+          <a href="../practica 2/index.html" class="card-proyectos"
+            >Practica Calificada 2</a
+          >
+          <a href="../practica 3/index.html" class="card-proyectos"
+            >Practica Calificada 3</a
+          >
+        </div>
+      </section>
 
+      <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form action="https://formspree.io/f/mkgbbpqb" method="post">
+          <div class="fila-dos-campos">
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+              />
             </div>
-        </section>
-
-        <section id="contacto" class="contacto">
-            <h2>Contacto</h2>
-             <form>
-                <div class="fila-dos-campos">
-                    <div class="campo">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
-                    </div>
-                    <div class="campo">
-                    <label for="correo">Correo electrónico</label>
-                    <input type="email" id="correo" name="correo" placeholder="tu@email.com">
-                    </div>
-                <div class="espacio-derecha"></div>
-                </div>
-    <div class="campo">
-      <label for="mensaje">Mensaje</label>
-      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
-    </div>
-    <button type="submit">Enviar</button>
-  </form>
-        </section>
+            <div class="campo">
+              <label for="correo">Correo electrónico</label>
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="tu@email.com"
+              />
+            </div>
+            <div class="espacio-derecha"></div>
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Escribe tu mensaje..."
+            ></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
     </main>
 
     <footer>
-         <p>© 2025 Luis Daniel Ornelas. Todos los derechos reservados.</p>
+      <p>© 2025 Luis Daniel Ornelas. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="./script.js"></script>
-</body>
+  </body>
 </html>
