@@ -9,7 +9,7 @@ async function renderizarCards() {
 
     data.forEach((usuario) => {
       contenedor.innerHTML += `
-        <div class="card rounded-2xl w-auto mx-auto aspect-[3/2] p-4 shadow-md overflow-auto break-words cursor-pointer transition-transform duration-300 hover:shadow-xl hover:scale-105">
+        <div class="card rounded-2xl w-full aspect-[3/2] p-4 shadow-md overflow-auto break-words cursor-pointer transition-transform duration-300 hover:shadow-xl hover:scale-105">
           <h3 class="font-semibold text-lg mb-2">Nombre: ${usuario.name}</h3>
           <p class="text-sm text-gray-400">Usuario: ${usuario.username}</p>
           <p class="text-sm text-gray-400 truncate">Email: ${usuario.email}</p>
