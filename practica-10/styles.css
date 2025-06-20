@@ -1,0 +1,46 @@
+.card {
+  --x: 50;
+  --y: 50;
+  --xp: 0.5;
+  --yp: 0.5;
+
+  position: relative;
+  border-radius: 1rem;
+  border: 8px solid hsl(0 0% 5%);
+  background-color: hsl(0 0% 10%);
+  color: white;
+  cursor: pointer;
+  overflow: visible;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: inset 0 0 10px hsl(0 0% 20%);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border-radius: 1rem;
+  pointer-events: none;
+  border: 8px solid transparent;
+  background: radial-gradient(
+    circle 120px at calc(var(--x) * 1px) calc(var(--y) * 1px),
+    hsl(calc(var(--xp) * 500) 95% 70%) 0%,
+    transparent 80%
+  );
+  filter: drop-shadow(0 0 10px hsl(calc(var(--xp) * 500) 95% 70%))
+    drop-shadow(0 0 20px hsl(calc(var(--xp) * 500) 90% 65%));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
