@@ -1,0 +1,330 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #192a32;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.contenedor {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  gap: 2%;
+}
+
+.cabecera,
+.marcador {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 90%;
+  height: 60%;
+}
+
+.iconos-jugador,
+.icono-reinicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 80%;
+  flex: 0 0 auto;
+}
+
+.iconos-jugador img,
+.icono-reinicio img {
+  width: 40px;
+  height: 40px;
+}
+
+.seleccion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5%;
+  width: 12%;
+  background-color: #1e3541;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.seleccion img {
+  width: 20px;
+  height: 20px;
+}
+
+.seleccion span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #a9bec8;
+  margin-left: 6px;
+  user-select: none;
+}
+
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+  width: 90%;
+  aspect-ratio: 1/1;
+  justify-content: center;
+}
+
+.casilla {
+  display: flex;
+  background-color: #1f3441;
+  aspect-ratio: 1/1;
+  border-radius: 15%;
+  box-shadow: 0 5px 0 #0f212a;
+  align-items: center;
+  justify-content: center;
+}
+
+.casilla img {
+  width: 60%;
+  height: 60%;
+  pointer-events: none;
+  user-select: none;
+}
+
+.marcador {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+  width: 90%;
+  height: 10%;
+}
+
+.jugador {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.name,
+.wins {
+  display: flex;
+  width: 90%;
+  height: 40%;
+  align-items: center;
+  justify-content: center;
+}
+
+.jugador .name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1e3541;
+  text-transform: uppercase;
+}
+
+.jugador .wins {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0e2d39;
+}
+
+#you {
+  background-color: #30c4bf;
+}
+
+#tie {
+  background-color: #a9bec8;
+}
+
+#cpu {
+  background-color: #f2b336;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #fefefe;
+  padding: 2.5rem 3rem;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 350px;
+  width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  font-family: "Poppins", sans-serif;
+  animation: fadeInScale 0.3s ease forwards;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.modal-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+  text-transform: none;
+}
+
+.modal-btn {
+  background: #31c3bd;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.8rem 0;
+  border-radius: 15px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.modal-btn:hover {
+  background: #3dd9cc;
+}
+
+.hidden {
+  display: none;
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .contenedor {
+    width: 70%;
+    padding: 20px;
+  }
+
+  .tablero {
+    gap: 4%;
+  }
+
+  .iconos {
+    gap: 15px;
+  }
+
+  .iconos-jugador img,
+  .icono-reinicio img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .seleccion {
+    width: 15%;
+  }
+
+  .seleccion img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .seleccion span {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .tablero {
+    gap: 3%;
+  }
+
+  .iconos {
+    gap: 10px;
+  }
+
+  .iconos-jugador img,
+  .icono-reinicio img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .seleccion {
+    width: 20%;
+    height: auto;
+    padding: 5px 8px;
+  }
+
+  .seleccion img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .seleccion span {
+    font-size: 0.8rem;
+  }
+
+  .modal {
+    max-width: 90%;
+    padding: 1.5rem 2rem;
+  }
+
+  .modal-title {
+    font-size: 2rem;
+  }
+
+  .modal-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .modal-btn {
+    font-size: 1rem;
+    padding: 0.6rem 0;
+  }
+}

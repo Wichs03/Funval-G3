@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+    />
+    <script src="./main.js" defer></script>
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <section class="contenedor">
+      <div class="cabecera">
+        <div class="iconos">
+          <div class="iconos-jugador">
+            <img src="./images/icon-x.svg" alt="Icono X" />
+            <img src="./images/icon-o.svg" alt="Icono O" />
+          </div>
+          <div class="seleccion"></div>
+          <div class="icono-reinicio">
+            <img src="./images/icon-restart.svg" alt="Reiniciar juego" />
+          </div>
+        </div>
+      </div>
+      <div class="tablero">
+        <div class="casilla" id="a"></div>
+        <div class="casilla" id="b"></div>
+        <div class="casilla" id="c"></div>
+        <div class="casilla" id="d"></div>
+        <div class="casilla" id="e"></div>
+        <div class="casilla" id="f"></div>
+        <div class="casilla" id="g"></div>
+        <div class="casilla" id="h"></div>
+        <div class="casilla" id="i"></div>
+      </div>
+      <div class="marcador">
+        <div class="jugador" id="you">
+          <div class="name">You</div>
+          <div class="wins">0</div>
+        </div>
+        <div class="jugador" id="tie">
+          <div class="name">Empates</div>
+          <div class="wins">0</div>
+        </div>
+        <div class="jugador" id="cpu">
+          <div class="name">CPU</div>
+          <div class="wins">0</div>
+        </div>
+      </div>
+    </section>
+    <div class="modal-overlay hidden">
+      <div class="modal">
+        <h2 class="modal-title"></h2>
+        <p class="modal-subtitle"></p>
+        <button class="modal-btn">New Game</button>
+      </div>
+    </div>
+  </body>
+</html>
